@@ -1,0 +1,21 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="default" extends="struts-default">
+		<result-types>
+			<result-type name="tiles"
+				class="org.apache.struts2.views.tiles.TilesResult" default="true" />
+		</result-types>
+
+		<action name="" class="menuaction" method="execute">
+			<result name="tiger">tiger</result>
+			<result name="lion">index</result>
+		</action>
+		<action name="index" class="user" method="execute">
+			<result name="success">index</result>
+		</action>
+
+	</package>
+</struts>
